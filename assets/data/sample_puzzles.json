@@ -1,0 +1,26 @@
+{
+  "puzzles": [
+    {
+      "id": "puzzle_001",
+      "number": 1,
+      "publishedDate": "2026-06-16",
+      "category": "数式パズル",
+      "difficulty": 3,
+      "content": {
+        "question": "□ + □ = 10\n□ × □ = 21",
+        "expectedFormat": "□に入る数字を入力（小さい順）"
+      }
+    },
+    {
+      "id": "puzzle_002",
+      "number": 2,
+      "publishedDate": "2026-06-17",
+      "category": "数式パズル",
+      "difficulty": 2,
+      "content": {
+        "question": "5 × □ - 3 = 22",
+        "expectedFormat": "□に入る数字を入力"
+      }
+    }
+  ]
+}
