@@ -10,17 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.x'
-      
+
       - name: Get dependencies
         run: flutter pub get
-      
+
+      - name: Check for dependency vulnerabilities
+        run: dart pub outdated
+
+      - name: Run analyzer
+        run: flutter analyze
+
       - name: Build APK
         run: flutter build apk --release
-      
+
       - name: Upload APK
         run: echo "APK built and ready for deployment"
