@@ -19,7 +19,7 @@ class InputValidators {
   }
 
   static bool isValidToken(String token) {
-    return token.isNotEmpty && token.length > 10;
+    return token.isNotEmpty && token.length >= 10;
   }
 
   static String? validatePuzzleInput(String input) {
